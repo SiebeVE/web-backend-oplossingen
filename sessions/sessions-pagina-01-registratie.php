@@ -3,12 +3,14 @@ session_start();
 
 if(isset($_GET["session"]) && $_GET["session"] == "destroy")
 {
+  //Verwijderen sessie
   session_unset();
   session_destroy();
 }
 
 function setSessionVar($key)
 {
+  //Ophalen post en in gelijknamige session zetten
   if(isset($_POST[$key]))
   {
     $_SESSION[$key] = $_POST[$key];

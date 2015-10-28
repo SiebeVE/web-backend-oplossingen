@@ -1,7 +1,9 @@
 <?php
 session_start();
+
 if(isset($_GET["session"]) && $_GET["session"] == "destroy")
 {
+  session_unset();
   session_destroy();
 }
 

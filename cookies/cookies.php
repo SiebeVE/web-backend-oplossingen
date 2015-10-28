@@ -45,14 +45,14 @@ if(isset($_POST["submit"]))
     $tijd = 0;
     if(isset($_POST["onthoud"]) && $_POST["onthoud"])
     {
-      $tijd = time() + (60*60*24*30);
+      $tijd = time() + (60*60*24*30); //30 dagen onthouden
     }
-    setcookie("usernaam", $_POST["user"], $tijd);
+    setcookie("usernaam", $_POST["user"], $tijd); //cookie maken
     header("Location: cookies.php");
   }
   else
   {
-    $verkeerdeInput = true;
+    $verkeerdeInput = true; // Gebruikersnaam of w8woord is niet correct
   }
 }
 ?>

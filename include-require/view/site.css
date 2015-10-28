@@ -1,0 +1,71 @@
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+nav li
+{
+  float: left;
+  padding: 10px 50px;
+}
+nav li:hover,
+nav li.active
+{
+  background-color: firebrick;
+  
+}
+nav li:hover > a,
+nav li.active > a
+{
+  color: antiquewhite;
+}
+a
+{
+  color: black;
+  text-decoration: none;
+}
+nav
+{
+  background-color: coral;
+  width: 100%;
+}
+footer
+{
+  background-color: coral;
+  padding:15px 0px;
+  width: auto;
+}
+footer > span
+{
+  display: block;
+  text-align: center;
+}
+h1
+{
+  font-size: 2.5em;
+}
+h2
+{
+  font-size: 2em;
+}
+article
+{
+  width: 20%;
+  padding: 5px;
+  margin: 5px;
+  float: left;
+}
+article > p+p
+{
+  font-style: italic;
+}
+article
+{
+  border-radius: 5px;
+  border: 1px solid blue;
+  background-color: aqua;
+}

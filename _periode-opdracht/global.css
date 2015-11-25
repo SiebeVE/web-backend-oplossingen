@@ -1,0 +1,142 @@
+html
+{
+	font-family: sans-serif;
+	color:#454545;;
+}
+
+ul
+{
+	list-style-type:none;
+}
+
+li
+{
+	margin-bottom: 12px;
+	display:table-row;
+}
+
+[name="toggleToDo"]
+{
+	position: relative;
+	border:0;
+	background-color:transparent;
+	margin:0;
+	font-size:20px;
+	padding:0 0 0 22px;
+	cursor:pointer;
+	outline-width:0;
+}
+
+[name="toggleToDo"]:before
+{
+	content:"";
+	position:absolute;
+	top:2px;
+	left:0;
+	width:18px;
+	height:18px;
+	display:block;
+	background-color:lightgrey;
+	border-radius:100%;
+	box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.08);
+
+}
+
+.not-done
+{
+	
+}
+
+.not-done:hover
+{
+	text-decoration: line-through;
+}
+
+.not-done:hover:before
+{
+	content:"";
+	background-color: #55F855;
+
+}
+
+.done
+{
+
+	text-decoration: line-through;
+}
+
+.done:before
+{
+	content:"";
+	background-color: #55F855;
+}
+
+.done:hover
+{
+	text-decoration: none;
+}
+.done:hover:before
+{
+	background-color:lightgrey;
+
+}
+
+
+[name=deleteToDo]
+{
+	float:right;
+	position: relative;
+	border:0;
+	background-color:transparent;
+	margin:3px 0 0 6px;
+	cursor:pointer;
+	outline-width:0;
+	position:relative;
+	width:18px;
+	height:18px;
+	display:inline-block;
+	background-color:red;
+	border-radius:100%;
+	box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.08);
+	color:transparent;
+	font-size:0px;
+}
+
+[name=deleteToDo]:before
+{
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:18px;
+	line-height:18px;
+	font-size:10px;
+	font-weight:bold;
+	text-align:center;
+	content:"X";
+	color: white;
+}
+
+.modal
+{
+	border-radius:3px;
+}
+
+.error
+{
+	background-color:red;
+	line-height:32px;
+	color:white;
+}
+
+.error:before
+{
+	content:"!";
+	display:inline-block;
+	width:32px;
+	height:32px;
+	font-size:32px;
+	text-align:center;
+	font-weight:bold;
+	float:left;
+	
+}

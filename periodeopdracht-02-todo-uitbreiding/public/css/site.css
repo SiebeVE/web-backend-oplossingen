@@ -1,0 +1,32 @@
+body {
+	font-family: 'Lato';
+}
+.fa-btn {
+	margin-right: 6px;
+}
+
+.todoLink
+{
+	color: #000;
+}
+.todoLink:hover
+{
+	text-decoration: line-through;
+}
+.todoLink:hover i
+{
+	color: #449d44;
+}
+
+.done .todoLink
+{
+	text-decoration: line-through;
+}
+.done .todoLink i
+{
+	color: #449d44;
+}
+.done .todoLink:hover
+{
+	text-decoration: none;
+}
